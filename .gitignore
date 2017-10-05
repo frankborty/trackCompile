@@ -1,0 +1,54 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Eclipse
+.project
+.cproject
+.settings
+
+# Doxygen
+doxygen/generated
+
+# Build Folders
+Debug
+Release
+Profile
+MemoryBenchmark
+TimeBenchmark
+build 
+
+# Benchmark data folders
+benchmarks/benchmark_data
+benchmarks/transverse_momentum
+benchmarks/memory_occupancy
+benchmarks/time_benchmark
+
+# Data
+data.txt
