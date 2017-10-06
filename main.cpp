@@ -4,12 +4,12 @@
 #include <fstream>
 #include <vector>
 
-#include "OCLUtils.h"
+#include "OCLTest.h"
 
 
 int main(int argc, char** argv)
 {
   std::cout << "provo opencl" << std::endl;
-  OCLUtils ::sumNum();
+  OCLTest ::sumNum();
   return 0;
 }

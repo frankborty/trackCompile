@@ -7,8 +7,8 @@
 #include <iostream>
 #include <fstream>
 
-namespace OCLUtils {
-  char *err_code (int err_in);
+namespace OCLTest {
+  int sumNum();
 }
 
 #endif /* TRACKINGITSU_INCLUDE_OCL_UTILS_H_ */

@@ -1,7 +1,8 @@
 set(MODULE src)
 
 set(SRCS
-  sumNum.cpp
+  OCLTest.cpp
+  OCLUtils.cpp
 )
 
 include_directories(${TRACKING-ITSU_SOURCE_DIR}/include)
