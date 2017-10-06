@@ -10,6 +10,11 @@
 #define BUFFER_SIZE 20
 
 
+#include <unistd.h>
+#define GetCurrentDir getcwd
+
+#include<iostream>
+
 
 int A[BUFFER_SIZE];
 int B[BUFFER_SIZE];
@@ -17,13 +22,23 @@ int C[BUFFER_SIZE];
 
 char *err_code (cl_int err_in);
 
+
+
+
+
 namespace OCLUtils {
+
+
 
   int sumNum(void){
     int n1=10;
     int n2=20;
     int n3=0;
-
+/*	char buff[FILENAME_MAX];
+  GetCurrentDir( buff, FILENAME_MAX );
+  std::string current_working_dir(buff);
+  std::cout<< current_working_dir<< std::endl;
+*/
       std::vector<cl::Platform> platformList;
       std::string info;
 
@@ -47,18 +62,18 @@ namespace OCLUtils {
       //selezionio il primo device associato al contesto e stampo il nome
       std::vector<cl::Device> devices= context.getInfo<CL_CONTEXT_DEVICES>();
 
-      std::ifstream fileSrc("add2Num.cl");
+      std::ifstream fileSrc("../kernel/add2Num.cl");
       if (!fileSrc.is_open()) {
-              std::cout << "Failed to read sinewave.cl";
+              std::cout << "Failed to read add2Num.cl";
               exit(1);
-          }
+      }
       std::string prog(
           std::istreambuf_iterator<char>(fileSrc),
           (std::istreambuf_iterator<char>()));
 
 
-      cl::Program::Sources sources(1,std::make_pair(prog.c_str(),prog.length()+1));
-      cl::Program program (context, sources);
+      //cl::Program::Sources sources(1,std::make_pair(prog.c_str(),prog.length()+1));
+      cl::Program program (context, prog);
 
 
       program.build(devices);
@@ -104,17 +119,17 @@ namespace OCLUtils {
 
 
       std::cout << std::endl;
-  /*
+
       int * output = (int *) queue.enqueueMapBuffer(
           cBuffer,
           CL_TRUE, // block
           CL_MAP_READ,
           0,
           sizeof(int));
-  */
+
       //for (int i = 0; i < BUFFER_SIZE; i++) {
       std::cout << "RESULT:";
-      std::cout << n3 <<std::endl;
+      std::cout << *output <<std::endl;
       //}
 
 

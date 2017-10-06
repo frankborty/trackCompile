@@ -1,0 +1,2 @@
+/opt/rh/devtoolset-6/root/usr/bin/ar qc libsrc.a  CMakeFiles/src.dir/sumNum.cpp.o
+/opt/rh/devtoolset-6/root/usr/bin/ranlib libsrc.a

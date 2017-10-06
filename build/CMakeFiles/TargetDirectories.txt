@@ -1,0 +1,6 @@
+/home/fdessena/Desktop/trackCompile/build/CMakeFiles/edit_cache.dir
+/home/fdessena/Desktop/trackCompile/build/CMakeFiles/rebuild_cache.dir
+/home/fdessena/Desktop/trackCompile/build/CMakeFiles/tracking-itsu-main.dir
+/home/fdessena/Desktop/trackCompile/build/src/CMakeFiles/edit_cache.dir
+/home/fdessena/Desktop/trackCompile/build/src/CMakeFiles/rebuild_cache.dir
+/home/fdessena/Desktop/trackCompile/build/src/CMakeFiles/src.dir

@@ -6,8 +6,6 @@ set(SRCS
 
 include_directories(${TRACKING-ITSU_SOURCE_DIR}/include)
 
-if(TRACKINGITSU_TARGET_DEVICE STREQUAL OPEN_CL)
+add_library(${MODULE} ${SRCS})
 
-  add_library(${MODULE} ${SRCS})
 
-endif(TRACKINGITSU_TARGET_DEVICE STREQUAL OPEN_CL)

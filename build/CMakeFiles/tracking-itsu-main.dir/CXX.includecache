@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/OCLUtils.h
+CL/cl.hpp
+-
+cstdio
+-
+cstdlib
+-
+iostream
+-
+fstream
+-
+
+/home/fdessena/Desktop/trackCompile/main.cpp
+iomanip
+-
+iostream
+-
+limits
+-
+fstream
+-
+vector
+-
+OCLUtils.h
+/home/fdessena/Desktop/trackCompile/OCLUtils.h
+

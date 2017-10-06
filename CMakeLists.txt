@@ -20,8 +20,7 @@ message(">> Compiling for OPENCL enabled devices")
 add_definitions(-DTRACKINGITSU_OPEN_CL_COMPILE)
 
 find_package( OpenCL REQUIRED )
-include_directories( ${OPENCL_INCLUDE_DIRS} )
-include_directories(${TRACKING-ITSU_SOURCE_DIR}/include)
+include_directories( ${OPENCL_INCLUDE_DIRS} ${TRACKING-ITSU_SOURCE_DIR}/include ${TRACKING-ITSU_SOURCE_DIR}/src ${TRACKING-ITSU_SOURCE_DIR}/kernel)
 
 add_subdirectory(src)
 
