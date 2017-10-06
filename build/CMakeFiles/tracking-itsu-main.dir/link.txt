@@ -1,1 +1,0 @@
-/opt/rh/devtoolset-6/root/usr/bin/c++   -std=c++11 -Wall -O3   CMakeFiles/tracking-itsu-main.dir/main.cpp.o  -o tracking-itsu-main -rdynamic src/libsrc.a -lOpenCL 
